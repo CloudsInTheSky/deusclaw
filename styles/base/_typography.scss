@@ -1,0 +1,63 @@
+h1 {
+    font-family: $h1-font;
+    font-size: $h1-size;
+    letter-spacing: .05rem;
+    color: $brand-orange;
+    text-align: center;
+}
+
+.head-main {
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    backface-visibility: hidden;
+    &--first {
+        display: block;
+        padding: 0 0 .2rem 0;
+        color: $brandgray;
+        letter-spacing: .1rem;
+        animation-name: moveInLeft;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+    
+        /*animation-delay: 3s;
+        animation-iteration-count: 3;*/
+    }
+    &--sub {
+        display: block;
+            color: $brandgray;
+        font-size: $body-size;
+        line-height: $body-height;
+        font-weight: 400;
+        text-align: left;
+    
+        animation: moveInRight 1s;
+    }
+}
+
+.heading-secondary{
+    font-family: $h1-font;
+    letter-spacing: .5rem;
+    color: $brandgray;
+    text-transform: uppercase;
+    font-size: $h2-size;
+    font-size: $h2-size;
+}
+
+.heading-tertiary{
+    color: $brandgray;
+    font-size: 1.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.paragraph {
+    color: $brandgray;
+    font-size: $body-size - .1rem;
+    line-height: $body-height;
+    &:not(:last-child){
+        margin-bottom: 2rem;
+    }
+    text-align: left;
+}
