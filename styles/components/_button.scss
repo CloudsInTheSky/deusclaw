@@ -2,11 +2,8 @@
     &:link,
     &:visited {
         display: inline-block;
-        font-size: $body-size;
         text-transform: uppercase;
         text-decoration: none;
-        margin: 2rem;
-        padding: 1.5rem 4rem;
         border-radius: 10rem;
         transition: all .2s;
         position: relative;
@@ -23,6 +20,9 @@
     }
 
 &-gray {
+        font-size: $body-size;
+        padding: 1.5rem 4rem;
+        margin: 2rem;
         background-color: $brandgray;
         color: $color-white;
         &::after {
@@ -46,6 +46,16 @@
     &:hover::after {
         transform: scaleX(1.5) scaleY(1.6);
         opacity: 0;
+    }
+
+    &--small {
+        padding: 1rem;
+        margin: 2rem 0;
+        display: inline-block;
+        font-size: 1.2rem;
+        color: black;
+        transform: scale(50%);
+        background-color: $brand-orange;
     }
 }
 

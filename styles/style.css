@@ -162,11 +162,8 @@ h1 {
 
 .btn:link, .btn:visited {
   display: inline-block;
-  font-size: 1.8rem;
   text-transform: uppercase;
   text-decoration: none;
-  margin: 2rem;
-  padding: 1.5rem 4rem;
   border-radius: 10rem;
   -webkit-transition: all .2s;
   transition: all .2s;
@@ -188,6 +185,9 @@ h1 {
 }
 
 .btn-gray {
+  font-size: 1.8rem;
+  padding: 1.5rem 4rem;
+  margin: 2rem;
   background-color: #1a1a1a;
   color: white;
 }
@@ -214,6 +214,17 @@ h1 {
   -webkit-transform: scaleX(1.5) scaleY(1.6);
           transform: scaleX(1.5) scaleY(1.6);
   opacity: 0;
+}
+
+.btn--small {
+  padding: 1rem;
+  margin: 2rem 0;
+  display: inline-block;
+  font-size: 1.2rem;
+  color: black;
+  -webkit-transform: scale(50%);
+          transform: scale(50%);
+  background-color: #ff8c1a;
 }
 
 .btn-txt:link, .btn-txt:visited {
@@ -273,7 +284,12 @@ h1 {
 }
 
 .card__side--back {
-  background-color: lightgray;
+  background-color: #1a1a1a;
+  color: white;
+  line-height: 2.6rem;
+  padding: 2rem;
+  font-size: 1.55rem;
+  text-align: left;
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
 }
@@ -298,16 +314,15 @@ h1 {
 }
 
 .card__picture--1 {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#ff8c1a), to(black)), url(../img/inktober.png);
-  background-image: linear-gradient(to right bottom, #ff8c1a, black), url(../img/inktober.png);
+  background-image: url(../img/November.png);
 }
 
 .card__picture--2 {
-  background-image: url(../img/behance.jpg);
+  background-image: url(../img/inktober.png);
 }
 
 .card__picture--3 {
-  background-image: url(../img/behance.jpg);
+  background-image: url(../img/adobe.png);
 }
 
 .card__heading {
