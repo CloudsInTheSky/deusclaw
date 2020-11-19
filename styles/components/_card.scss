@@ -25,7 +25,12 @@
     }
 
     &--back {
-        background-color: lightgray;
+        background-color: $brandgray;
+        color: white;
+        line-height: 2.6rem;
+        padding: 2rem;
+        font-size: $body-size - .25rem;
+        text-align: left;
         transform: rotateY(180deg);
         }
     }
@@ -47,14 +52,16 @@
         clip-path: polygon(0 0,100% 0, 100% 85%,0 100%);
 
         &--1 {
-            background-image: linear-gradient(to right bottom, $brand-orange, black),
-            url(../img/inktober.png);
+            background-image: 
+            url(../img/November.png);
         }
         &--2 {
-            background-image: url(../img/behance.jpg);
+            background-image: 
+            url(../img/inktober.png);
         }
         &--3 {
-            background-image: url(../img/behance.jpg);
+            background-image: 
+            url(../img/adobe.png);
         }
     }
 
@@ -68,7 +75,6 @@
             top: 14rem;
             right: 2rem;
             width: 75%;
-
         }
 
         &__heading-span {
