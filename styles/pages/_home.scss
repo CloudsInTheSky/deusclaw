@@ -1,10 +1,11 @@
-.section-about {
-    position: relative;
-    background-color: $brand-orange;
-    padding: 10rem .5rem;
-    height: 100vh;
+.section-featured {
+    background-color: rgb(240, 240, 240);
+    padding: 8rem 5rem 50rem;
 }
 
-.section-featured {
-    padding: 18rem 5rem;
+.section-about {
+    position: relative;
+    background-color: rgba($brand-orange,.87);
+    padding: 12rem .5rem;
+    height: 100vh;
 }
