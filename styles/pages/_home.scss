@@ -1,6 +1,11 @@
 .section-featured {
+    position: relative;
     background-color: rgb(240, 240, 240);
     padding: 8rem 5rem 50rem;
+
+    @include respond(tab-port) {
+        padding: 1rem 2rem;
+    }
 }
 
 .section-about {
@@ -8,4 +13,9 @@
     background-color: rgba($brand-orange,.87);
     padding: 12rem .5rem;
     height: 100vh;
+
+    @include respond(tab-port) {
+        padding: 5rem 0rem;
+        height: 60vh;
+    }
 }
