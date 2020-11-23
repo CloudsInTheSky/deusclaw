@@ -1,8 +1,19 @@
-html {
-  font-size: 62.5%;
-  scroll-behavior: smooth;
-}
+/*
+0-600px: phone
+600 - 900px: tablet portrait
+900 - 1200px: Tablet lanscape
+1200-1800: destop first (our design)
+1800+ * : big desktop
+*/
+/*
+brekpoint arguments
+- phone
+- tablet portrait
+- tablet landscape
+- tablet desktop
 
+1em = 16px
+*/
 *,
 *::after,
 *::before {
@@ -10,6 +21,17 @@ html {
   padding: 0;
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 75em) {
+  html {
+    font-size: 56.3%;
+  }
 }
 
 body {
@@ -372,7 +394,6 @@ h1 {
 
 hr {
   border: 2px solid #ff8c1a;
-  width: 60%;
   margin: 2rem auto;
 }
 
