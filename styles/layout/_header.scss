@@ -15,4 +15,10 @@
         height: 8rem;
         opacity: 1;
     }
+
+    height: 100vh;
+
+    @include respond(tab-land) {
+        height: 77vh;
+    }
 }
