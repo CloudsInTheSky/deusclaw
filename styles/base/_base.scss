@@ -1,14 +1,18 @@
-html {
-    font-size: 62.5%;
-    scroll-behavior: smooth;
-}
-
 *,
 *::after,
 *::before {
     margin: 0;
     padding: 0;
     box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+
+    @include respond(tab-land) {
+        font-size: 56.3%;
+    }
 }
 
 body {
@@ -19,3 +23,4 @@ body {
     text-align: center;
     box-sizing: border-box;
 }
+
