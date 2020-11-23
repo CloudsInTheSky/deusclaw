@@ -8,10 +8,14 @@ h1 {
 
 .head-main {
     position: absolute;
-    top: 65%;
+    top: 70%;
     left:50%;
     transform: translate(-50%,-50%);
     backface-visibility: hidden;
+
+    @include respond(tab-land) {
+        top: 44%;
+    }
     &--first {
         display: block;
         padding: 0 0 .2rem 0;
@@ -33,6 +37,11 @@ h1 {
         text-align: left;
     
         animation: moveInRight 1s;
+    }
+
+    @include respond(tab-land) {
+        font-size: 2.4rem;
+        line-height: 3.8;    
     }
 }
 
