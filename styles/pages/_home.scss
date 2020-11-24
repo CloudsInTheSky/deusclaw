@@ -1,21 +1,23 @@
 .section-featured {
     position: relative;
-    background-color: rgb(240, 240, 240);
+    background-color: rgba(255, 255, 255, 0.9);
     padding: 8rem 5rem 50rem;
 
-    @include respond(tab-port) {
+    @include respond(phone) {
         padding: 1rem 2rem;
     }
 }
 
 .section-about {
-    position: relative;
+    position: inherit;
     background-color: rgba($brand-orange,.87);
     padding: 12rem .5rem;
     height: 100vh;
 
     @include respond(tab-port) {
         padding: 5rem 0rem;
-        height: 60vh;
+        height: 87vh;
+        margin-top: 148rem;
+
     }
 }
