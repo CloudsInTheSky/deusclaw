@@ -1,7 +1,7 @@
 .header {
     height: 100vh;
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, .9),
-    rgb(240, 240, 240)),url(../img/milwaukee.png);
+    rgb(255, 255, 255)),url(../img/milwaukee.png);
     background-color: $brandgray;
     background-size: contain;
     position: bottom;
@@ -14,11 +14,8 @@
     &__logo>img {
         height: 8rem;
         opacity: 1;
-    }
-
-    height: 100vh;
-
-    @include respond(tab-land) {
-        height: 77vh;
+        @include respond(phone){
+            height: 6rem;
+        }
     }
 }
