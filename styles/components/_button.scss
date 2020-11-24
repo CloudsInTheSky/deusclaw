@@ -7,6 +7,8 @@
         border-radius: 10rem;
         transition: all .2s;
         position: relative;
+
+
     }
 
     &:hover {
@@ -27,6 +29,11 @@
         color: $color-white;
         &::after {
             background-color: $brandgray;
+        }
+
+        @include respond(phone){
+            padding: .5rem 2rem;
+            margin: 1rem;
         }
     }
 
